@@ -1,0 +1,36 @@
+<IfModule mod_rewrite.c> 
+RewriteEngine On 
+RewriteBase / 
+RewriteRule ^index\.html$ - [L] 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-l 
+RewriteRule . /index.html [L] 
+</IfModule>
+
+Redirect 301 /whatsapp https://wa.me/+923352522522
+Redirect 301 /facebook https://facebook.com/imuhammadosama
+Redirect 301 /instagram https://instagram.com/imuhammadosama
+Redirect 301 /twitter https://twitter.com/imuhammadosama
+Redirect 301 /youtube https://youtube.com/imuhammadosama
+Redirect 301 /fiverr https://fiverr.com/imuhammadosama
+Redirect 301 /meet https://meet.google.com/ssx-bcms-qcg
+Redirect 301 /namecheap https://www.anrdoezrs.net/click-100600637-15158727
+Redirect 301 /pay https://paypal.me/solverscave
+Redirect 301 /text https://rentry.co/imuhammadosama
+Redirect 301 /image https://imgur.com/upload
+Redirect 301 /video https://streamable.com/
+Redirect 301 /optimize https://tiny-img.com/webp/
+Redirect 301 /copy https://www.copy.ai/
+Redirect 301 /erase https://www.erase.bg/
+Redirect 301 /api https://opensheet.elk.sh
+Redirect 301 /postman https://hoppscotch.io/
+Redirect 301 /keywords https://ads.google.com/aw/keywordplanner/home?ocid=260794940&euid=272236736&__u=3965468864&uscid=260794940&__c=6151604060&authuser=0&sf=kp&subid=pk-en-et-g-aw-a-tools-kwp_bb-awhp_xin1%21o2
+Redirect 301 /watch https://sflix.to/user/favorite
+Redirect 301 /track https://www.justwatch.com/
+Redirect 301 /docs https://docs.google.com/document/
+Redirect 301 /sheets https://docs.google.com/spreadsheets/
+Redirect 301 /envato https://qltien.com/elements/active.html
+Redirect 301 /mail https://vk.mail.ru/inbox/
+Redirect 301 /vk https://vk.com/search?c%5Badult%5D=1&c%5Bhd%5D=1&c%5Bper_page%5D=40&c%5Bsection%5D=video&c%5Bsort%5D=2
+Redirect 301 /bookmarks https://raindrop.io/imuhammadosama

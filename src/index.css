@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f5f5f5;
+  background-position: 0 0;
+  background-size: auto;
+  box-sizing: border-box;
+  font-family: 'Sora';
+  max-width: 1200px;
+  margin: auto;
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+}
+
+#file-input {
+  display: none;
+}
+
+.upload-label {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.file-name {
+  margin-top: 24px;
+}
+
+.upload-label-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.upload-label-icon {
+  background-color: #fff;
+  border-radius: 16px;
+
+  color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  padding: 16px 32px;
+  text-decoration: none;
+  transition: background-color 0.1s ease-in;
+  transition: 0.1s ease-in;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-label-icon:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.upload-label-icon:focus {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.upload-label-icon:active {
+  box-shadow: none;
+}
+
+.upload-label-input {
+  margin-bottom: 16px;
+}
+
+.upload-button {
+  font-family: 'Sora';
+  background-color: #27282a;
+  color: #f5f5f5;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.upload-button:disabled {
+  border: none;
+}
+
+#toast {
+  visibility: hidden;
+  margin-left: -125px;
+  background-color: #333;
+  color: #f5f5f5;
+  text-align: center;
+  border-radius: 2px;
+  padding: 8px 24px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  border-radius: 10px;
+}
+
+#toast.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0px;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
