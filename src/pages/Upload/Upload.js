@@ -47,8 +47,14 @@ export default function Upload() {
 
   return (
     <div className='container'>
-      <div className='credit'>
-        Built by <a href='https://codebyosama.com'>codebyosama.com</a>
+      <div style={{ position: 'absolute', bottom: '80px', color: '#777' }}>
+        Built by{' '}
+        <a
+          href='https://codebyosama.com'
+          style={{ textDecoration: 'none', color: '#048484' }}
+        >
+          codebyosama.com
+        </a>
       </div>
       <label className='upload-label'>
         <div className='upload-label-title'>
