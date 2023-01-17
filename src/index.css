@@ -144,3 +144,14 @@ body {
     opacity: 0;
   }
 }
+
+.credit {
+  position: absolute;
+  bottom: 80px;
+  color: #777;
+}
+
+.credit > a {
+  text-decoration: none;
+  color: #048484;
+}

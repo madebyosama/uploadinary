@@ -18,7 +18,7 @@ export default function Upload() {
           navigator.clipboard.writeText(
             Response.data.url
               .replace(/\.[^\/.]+$/, '')
-              .replace('/upload/', '/upload/q_auto:eco/') + '.webp'
+              .replace('http:', 'https:') + '.webp'
           );
           document.getElementById('file-input').value = '';
           setFile(false);
@@ -47,6 +47,9 @@ export default function Upload() {
 
   return (
     <div className='container'>
+      <div className='credit'>
+        Built by <a href='https://codebyosama.com'>codebyosama.com</a>
+      </div>
       <label className='upload-label'>
         <div className='upload-label-title'>
           <div className='upload-label-input'>
@@ -70,7 +73,7 @@ export default function Upload() {
           src={
             file
               ? URL.createObjectURL(file[0])
-              : 'http://res.cloudinary.com/dvwpbbisf/image/upload/q_auto:eco/v1662211159/cfcrzb6wuqrbgmvzz6ee.webp'
+              : 'https://res.cloudinary.com/dvwpbbisf/image/upload/q_auto:eco/v1662211159/cfcrzb6wuqrbgmvzz6ee.webp'
           }
           height='150px'
         />
