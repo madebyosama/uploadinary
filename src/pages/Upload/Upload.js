@@ -48,7 +48,7 @@ export default function Upload() {
   return (
     <div className='container'>
       <div style={{ position: 'absolute', bottom: '80px', color: '#777' }}>
-        Built by{' '}
+        Made with ❤ by{' '}
         <a
           href='https://codebyosama.com'
           style={{ textDecoration: 'none', color: '#048484' }}
