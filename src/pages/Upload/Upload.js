@@ -17,8 +17,9 @@ export default function Upload() {
         if (type === 'pic') {
           navigator.clipboard.writeText(
             Response.data.url
-              .replace(/\.[^\/.]+$/, '')
-              .replace('http:', 'https:') + '.webp'
+              // .replace(/\.[^\/.]+$/, '')
+              .replace('http:', 'https:')
+            // + '.webp'
           );
           document.getElementById('file-input').value = '';
           setFile(false);
